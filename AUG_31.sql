@@ -1,0 +1,2 @@
+CREATE DATABASE Car;
+USE Car;
