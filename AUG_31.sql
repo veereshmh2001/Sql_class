@@ -21,3 +21,19 @@ create table camera_info(c_brand varchar(11), c_features int, c_size int , c_len
 select * from camera_info;
 
 ALTER TABLE camera_info ADD COLUMN (p_bluetooth varchar(5),p_warranty varchar(5));
+
+ALTER TABLE camera_info DROP COLUMN c_price;
+DESC camera_info;
+DROP TABLE camera_info;
+
+INSERT INTO pub_info VALUES(veeru,hubli,100);
+DESC pub_info;
+INSERT INTO pub_info VALUES ('VEERU','hubli',100,2,4,50,30,500);
+INSERT INTO pub_info (p_name,p_area) VALUES('rohan','blore');
+
+select * from pub_info order by p_area;
+select * from pub_info order by p_area desc;
+
+
+
+
